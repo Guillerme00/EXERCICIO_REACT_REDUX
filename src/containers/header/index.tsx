@@ -1,4 +1,4 @@
-import { StyledTitle, Subtitle } from '../../components/Typography/Title'
+import { StyledTitle, Subtitle } from '../../components/UI/Typography/Title'
 import { StyledHeader } from './styles'
 
 const Header = () => {

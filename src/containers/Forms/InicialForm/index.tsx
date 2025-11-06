@@ -1,14 +1,13 @@
-import { Container } from '../../../GlobalReset'
-import { StyledContainer, StyleForm } from './style'
+import { StyledContainer, StyledInput, StyleForm, StyledButton } from './style'
 
 export const InicialForm = () => {
   return (
     <>
       <StyledContainer>
-        <StyleForm action="">
-          <input type="text" placeholder="Find your game" />
+        <StyleForm>
+          <StyledInput type="text" placeholder="Find your game" />
+          <StyledButton type="button">Submit</StyledButton>
         </StyleForm>
-        <button type="button">Submit</button>
       </StyledContainer>
     </>
   )

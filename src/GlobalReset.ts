@@ -7,8 +7,7 @@ const GlobalStyle = createGlobalStyle`
   box-sizing: border-box;
   }
   body {
-    font-family: sans-serif;
-    background-image: linear-gradient(to bottom, ${props => props.theme.BackgroundFirstColor}, ${props => props.theme.BackgroundSecondColor})
+    background-color: ${props => props.theme.BackgroundFirstColor};
   }
   html, body, #root {
     height: 100%;
