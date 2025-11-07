@@ -1,12 +1,16 @@
 import styled from 'styled-components'
 
 export const StyledContainer = styled.div`
-  display: grid;
-  grid-template-columns: 1fr 1fr;
   margin-top: 16px;
   background-color: ${props => props.theme.HeaderBackgroundColor};
   padding: 8px;
   border-radius: 20px;
+`
+
+export const StyledContainerTwo = styled.div`
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 `
 
 export const StyledDivLeft = styled.div`
@@ -107,4 +111,32 @@ export const StyledComments = styled.input`
   border: 1px solid ${props => props.theme.TextColor};
   font-family: 'Stack Sans Notch', sans-serif;
   font-size: 16px;
+`
+export const BtnDiv = styled.div`
+  width: 100%;
+  display: flex;
+  flex-direction: row-reverse;
+  margin-top: 16px;
+  gap: 8px;
+`
+
+export const BtnSucess = styled.button`
+  width: 120px;
+  background-color: ${props => props.theme.Sucess};
+  border-radius: 20px;
+  border: 1px solid ${props => props.theme.TextColor};
+  cursor: pointer;
+  &:hover {
+    background-color: ${props => props.theme.SucessHover};
+  }
+`
+export const BtnCancel = styled.button`
+  width: 120px;
+  background-color: ${props => props.theme.Cancel};
+  border-radius: 20px;
+  border: 1px solid ${props => props.theme.TextColor};
+  cursor: pointer;
+  &:hover {
+    background-color: ${props => props.theme.CancelHover};
+  }
 `

@@ -9,5 +9,9 @@ declare module 'styled-components' {
     TextColor: string
     Paraghaph: string
     Label: string
+    Sucess: string
+    Cancel: string
+    SucessHover: string
+    CancelHover: string
   }
 }
