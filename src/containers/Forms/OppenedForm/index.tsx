@@ -1,4 +1,5 @@
 import { PlatformSelector } from '../../../components/Form/PlatformSelector'
+import { StyledScore } from '../../../components/UI/Tag'
 import { GenrerTag } from '../../../components/UI/Tag/Genrer'
 import { Subtitle } from '../../../components/UI/Typography/Title'
 import {
@@ -11,23 +12,29 @@ import {
   StyledMetaeDiv,
   StyledP,
   StyledClassificationimg,
-  StyledTagContainer
+  StyledTagContainer,
+  StyledContainerDescription,
+  StyledContainerScore,
+  StyledPara,
+  StyledComments,
+  StyledCommentsContainer
 } from './style'
 
 const genres: string[] = ['Action', 'Adventure', 'Sci-fy', 'Romance', 'Horro']
+const scores: number[] = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
 export const OppenedForm = () => {
   return (
     <>
       <StyledContainer>
         <StyledDivLeft>
-          <StyledImg src="https://placehold.co/600x400/png"></StyledImg>
+          <StyledImg src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2531310/header.jpg?t=1750959180"></StyledImg>
           {/* SEPARATION */}
           <Subtitle>
             <StyledP>Game:</StyledP>
           </Subtitle>
           {/* SEPARATION */}
-          <StyledGameName>God of war</StyledGameName>
+          <StyledGameName>The Last of Us™ Parte II Remastered</StyledGameName>
           {/* SEPARATION */}
           <StyledMetaeDiv>
             <StyledClassificationDiv>
@@ -51,7 +58,32 @@ export const OppenedForm = () => {
           </Subtitle>
           <Subtitle>
             <StyledP>Description:</StyledP>
+            <StyledContainerDescription>
+              <StyledPara>
+                Cinco anos depois de uma jornada perigosa pelos Estados Unidos
+                num cenário pós-pandêmico, Ellie e Joel foram morar em Jackson,
+                Wyoming. A vida numa comunidade próspera de sobreviventes lhes
+                trouxe paz e estabilidade, apesar da ameaça constante dos
+                infectados e de outros sobreviventes mais desesperados. Quando
+                um evento violento interrompe a paz, Ellie parte numa jornada
+                incansável para fazer justiça e virar a página.
+              </StyledPara>
+            </StyledContainerDescription>
           </Subtitle>
+          <Subtitle>
+            <StyledP>Score:</StyledP>
+          </Subtitle>
+          <StyledContainerScore>
+            {scores.map(Num => (
+              <StyledScore key={Num} label={Num}></StyledScore>
+            ))}
+          </StyledContainerScore>
+          <StyledCommentsContainer>
+            <Subtitle>
+              <StyledP>Comment(Opcional):</StyledP>
+            </Subtitle>
+            <StyledComments />
+          </StyledCommentsContainer>
         </StyledDivRight>
       </StyledContainer>
     </>

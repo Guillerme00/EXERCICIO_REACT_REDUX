@@ -71,6 +71,40 @@ export const StyledTagContainer = styled.div`
   display: flex;
   flex-wrap: wrap;
   gap: 8px;
-  margin-top: 8px;
   margin-bottom: 24px;
+`
+
+export const StyledContainerDescription = styled.div`
+  width: 100%;
+  border-radius: 20px;
+  border: 1px solid ${props => props.theme.TextColor};
+  padding: 8px;
+`
+
+export const StyledContainerScore = styled.div`
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 8px;
+  padding-right: 8px;
+`
+
+export const StyledCommentsContainer = styled.div`
+  width: 100%;
+  margin-top: 16px;
+`
+
+export const StyledPara = styled.p`
+  font-size: 16px;
+  color: ${props => props.theme.TextColor};
+  font-family: 'Stack Sans Notch', sans-serif;
+`
+
+export const StyledComments = styled.input`
+  border-radius: 20px;
+  padding-left: 8px;
+  width: 100%;
+  border: 1px solid ${props => props.theme.TextColor};
+  font-family: 'Stack Sans Notch', sans-serif;
+  font-size: 16px;
 `
