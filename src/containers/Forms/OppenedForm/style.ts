@@ -18,9 +18,9 @@ export const StyledDivLeft = styled.div`
 export const StyledDivRight = styled.div`
   display: flex;
   flex-direction: column;
-  align-items: center;
   border-radius: 20px;
   margin-left: 8px;
+  margin-top: 16px;
 `
 
 export const StyledImg = styled.img`
@@ -64,4 +64,11 @@ export const StyledClassificationimg = styled.img`
   width: 96px;
   height: 96px;
   border-radius: 8px;
+`
+
+export const StyledTagContainer = styled.div`
+  width: 100%;
+  display: flex;
+  gap: 8px;
+  margin-top: 8px;
 `

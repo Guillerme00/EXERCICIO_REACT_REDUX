@@ -1,5 +1,6 @@
 import { PlatformSelector } from '../../../components/Form/PlatformSelector'
-import { StyledTitle, Subtitle } from '../../../components/UI/Typography/Title'
+import { GenrerTag } from '../../../components/UI/Tag/Genrer'
+import { Subtitle } from '../../../components/UI/Typography/Title'
 import {
   StyledClassificationDiv,
   StyledContainer,
@@ -9,8 +10,12 @@ import {
   StyledImg,
   StyledMetaeDiv,
   StyledP,
-  StyledClassificationimg
+  StyledClassificationimg,
+  StyledTagContainer
 } from './style'
+
+const genres: string[] = ['Action', 'Adventure', 'Sci-fy', 'Romance', 'Horro']
+
 export const OppenedForm = () => {
   return (
     <>
@@ -33,7 +38,18 @@ export const OppenedForm = () => {
           </StyledMetaeDiv>
         </StyledDivLeft>
         {/* SEPARATION */}
-        <StyledDivRight>Hi</StyledDivRight>
+        <StyledDivRight>
+          <Subtitle>
+            <StyledP>Genders:</StyledP>
+            {/* SEPARATION */}
+            <StyledTagContainer>
+              {genres.map(genero => (
+                <GenrerTag key={genero} label={genero} />
+              ))}
+            </StyledTagContainer>
+            {/* SEPARATION */}
+          </Subtitle>
+        </StyledDivRight>
       </StyledContainer>
     </>
   )
