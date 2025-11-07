@@ -49,6 +49,9 @@ export const OppenedForm = () => {
             </StyledTagContainer>
             {/* SEPARATION */}
           </Subtitle>
+          <Subtitle>
+            <StyledP>Description:</StyledP>
+          </Subtitle>
         </StyledDivRight>
       </StyledContainer>
     </>

@@ -69,6 +69,8 @@ export const StyledClassificationimg = styled.img`
 export const StyledTagContainer = styled.div`
   width: 100%;
   display: flex;
+  flex-wrap: wrap;
   gap: 8px;
   margin-top: 8px;
+  margin-bottom: 24px;
 `
