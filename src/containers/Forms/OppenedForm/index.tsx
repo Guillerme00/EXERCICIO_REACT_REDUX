@@ -1,3 +1,4 @@
+import { useState } from 'react'
 import { PlatformSelector } from '../../../components/Form/PlatformSelector'
 import { StyledScore } from '../../../components/UI/Tag'
 import { GenrerTag } from '../../../components/UI/Tag/Genrer'
@@ -27,7 +28,11 @@ import {
 const genres: string[] = ['Action', 'Adventure', 'Sci-fy', 'Romance', 'Horror']
 const scores: number[] = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
-export const OppenedForm = () => {
+type Props = {
+  value: string
+}
+
+export const OppenedForm = ({ value }: Props) => {
   return (
     <>
       <StyledContainer>
@@ -39,9 +44,7 @@ export const OppenedForm = () => {
               <StyledP>Game:</StyledP>
             </Subtitle>
             {/* SEPARATION */}
-            <StyledGameName>
-              The Last of Us™ Parte II Remastered
-            </StyledGameName>
+            <StyledGameName>{value}</StyledGameName>
             {/* SEPARATION */}
             <StyledMetaeDiv>
               <StyledClassificationDiv>

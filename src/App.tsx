@@ -2,8 +2,7 @@ import { ThemeProvider } from 'styled-components'
 import Header from './containers/header'
 import GlobalStyle, { Container } from './GlobalReset'
 import DarkTheme from './themes/dark'
-import { InicialForm } from './containers/Forms/InicialForm/index'
-import { OppenedForm } from './containers/Forms/OppenedForm'
+import { Form } from './containers/Forms'
 
 function App() {
   return (
@@ -12,8 +11,7 @@ function App() {
         <GlobalStyle />
         <Container>
           <Header />
-          <InicialForm></InicialForm>
-          <OppenedForm></OppenedForm>
+          <Form />
         </Container>
       </ThemeProvider>
     </>
