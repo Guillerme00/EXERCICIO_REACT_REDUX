@@ -1,4 +1,3 @@
-import { useState } from 'react'
 import { PlatformSelector } from '../../../components/Form/PlatformSelector'
 import { StyledScore } from '../../../components/UI/Tag'
 import { GenrerTag } from '../../../components/UI/Tag/Genrer'
@@ -38,7 +37,7 @@ export const OppenedForm = ({ value }: Props) => {
       <StyledContainer>
         <StyledContainerTwo>
           <StyledDivLeft>
-            <StyledImg src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2531310/header.jpg?t=1750959180"></StyledImg>
+            <StyledImg src="https://images.igdb.com/igdb/image/upload/t_cover_big/co8fu7.jpg"></StyledImg>
             {/* SEPARATION */}
             <Subtitle>
               <StyledP>Game:</StyledP>
